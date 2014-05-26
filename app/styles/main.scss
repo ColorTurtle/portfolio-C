@@ -32,6 +32,10 @@ a {
     }
 }
 
+hr {
+    border-top: 1px solid rgba(238, 238, 238, 0.37);
+}
+
 .main-link {
     color: white;
     text-decoration: underline;
@@ -89,6 +93,16 @@ a {
 
 .blue2-background {
     background-color: #349AAD;
+    color: white;
+}
+
+.blue3-background {
+    background-color: #57AAB9;
+    color: white;
+}
+
+.blue4-background {
+    background-color: #9ED1DA;
     color: white;
 }
 
@@ -150,9 +164,20 @@ a {
     }
 }
 
+.about-section {
+    position: relative;
+
+    .about-link {
+        position: absolute;
+        top: -120px;
+
+    }
+}
+
 /* Custom page footer */
 .container-narrow > hr {
-    margin: 30px 0;
+    margin: 20px 0;
+    border-top: 1px solid rgba(238, 238, 238, 0.37);
 }
 
 .container .jumbotron {
@@ -171,6 +196,17 @@ a {
     padding-top: 20px;
     padding-bottom: 30px;
     position: relative;
+}
+
+.project-desc {
+    .site-components {
+        padding-left: 0px;
+
+        li {
+            display: inline-block;
+            padding-right: 10px;
+        }
+    }
 }
 
 .desktop {

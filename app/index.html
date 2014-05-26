@@ -48,19 +48,20 @@
                 </div>
                 <div class="col-sm-7">
                     <ul class="nav nav-pills pull-right">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="mailto:daniel@colorturtle.com?subject=I found your portfolio site and I'd love to chat">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
 
-        <div class="container">
+        <div class="container about-section">
+        <a id="about" class="about-link"></a>
             <div class="row">
                 <div class="col-sm-7">
                     <div class="jumbotron">
-                        <h2 class="text-center">About Me</h2>
+                            <h2 class="text-center">About Me</h2>
                         <p>I am a new developer having just completed a bootcamp style front end program. I have a simple and clean design aesthetic. I work best in collaboration and I enjoy taking abstract ideas and creating something concrete, efficient and beautiful.</p>
                         <h3 class="text-center">A little more 'About Me'</h3>
                         <p>Two years ago I decided to make a change. I left a career in the non-profit field to pursue web design. <em>Why?</em> I am convinced I can make a wider impact on the world via web applications.</p> 
@@ -86,6 +87,7 @@
                             <li>Gluten free baking <em>(because I have to)</em></li>
                             <li>Interior design</li>
                             <li>Home remodeling</li>
+                            <a id="work"></a>
                             <li>Raising my kids</li>
                         </ul>
                     </div>
@@ -97,6 +99,7 @@
         <div class="work">
             <div class="portfolio-item blue-background">
                 <div class="container">
+                    <h2>My Recent Work</h2>
                     <div class="project-bio">
                         <a class="main-link" href="http://rushingfamilypractice.com/">
                             <h3>Rushing Family Practice</h3>
@@ -117,10 +120,11 @@
                             </div>
                             <div class="project-desc col-sm-5">
                                 <p>This was a project for a clinic in my hometown. The staff were a great group of people and I especially loved this project because I was able to do a lot of design and branding. The didn't have an existing site and the only artwork I was provided with was their logo. With their input I created the design concept and a lot of the copy to give a small town clinic a professional feel that was still warm and inviting.</p>
-                                <ul>
-                                    <li>HTML</li>
-                                    <li>CSS</li>
-                                    <li>Branding</li>
+                                <hr>
+                                <ul class="site-components text-center">
+                                    <li>*HTML</li>
+                                    <li>*CSS</li>
+                                    <li>*Branding</li>
                                 </ul>
                                 <hr>
                                 <p class="text-center"><a class="btn btn-light btn-lg" href="http://rushingfamilypractice.com/" target="blank">Live Site</a></p>
@@ -133,28 +137,114 @@
             <div class="portfolio-item blue2-background">
                 <div class="container">
                     <div class="project-bio">
-                        <a class="main-link" href="http://rushingfamilypractice.com/">
+                        <a class="main-link" href="http://moneylawfirm.net/">
                             <h3>Money Law Firm</h3>
                         </a>
                         <div class="row">
                             <div class="project-example col-sm-7">
                                 <div class="desktop">
                                     <div class="desktop-img">
-                                        <img src="images/rfp-desktop.png">
+                                        <img src="images/mlf-desktop.png">
                                     </div>
+                                </div>
+                                <div class="mobile">
+                                    <div class="mobile-img">
+                                        <img src="images/mlf-mobile.png">
+                                    </div>
+                                    <div class="mobile-btn"></div>
                                 </div>
                                 <!-- mobile div goes here -->
                             </div>
                             <div class="project-desc col-sm-5">
-                                <p>This was a project for a clinic in my hometown. The staff were a great group of people and I especially loved this project because I was able to do a lot of design and branding. The didn't have an existing site and the only artwork I was provided with was their logo. With their input I created the design concept and a lot of the copy to give a small town clinic a professional feel that was still warm and inviting.</p>
+                                <p>I built this site for a lawyer who had an interesting request. His office was located in a small town outside of Dallas. He wanted a professional site that would appeal to his Dallas area clients without feeling alienated from his local patrons. One solution I implimented was using local area photos (which I took myself) as a key comonent for the design.</p>
                                 <hr>
-                                <p class="text-center"><a class="btn btn-light btn-lg" href="http://rushingfamilypractice.com/" target="blank">Live Site</a></p>
+                                <ul class="site-components text-center">
+                                    <li>*HTML</li>
+                                    <li>*CSS</li>
+                                    <li>*jQuery</li>
+                                    <li>*Branding/Logo Design</li>
+                                </ul>
+                                <hr>
+                                <p class="text-center"><a class="btn btn-light btn-lg" href="http://moneylawfirm.net/" target="blank">Live Site</a></p>
 
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="portfolio-item blue3-background">
+                <div class="container">
+                    <div class="project-bio">
+                        <a class="main-link" href="http://pupalstage.com/">
+                            <h3>TaleSpinner Splash Page</h3>
+                        </a>
+                        <div class="row">
+                            <div class="project-example col-sm-7">
+                                <div class="desktop">
+                                    <div class="desktop-img">
+                                        <img src="images/talespinner.png">
+                                    </div>
+                                </div>
+                                <!-- mobile div goes here -->
+                            </div>
+                            <div class="project-desc col-sm-5">
+                                <p>While attending TIY, I participated in a StartUp Weekend event. I was excited to work on an application that created personalized stories using pictures loaded up by the user. I thought the idea was phenominal and I'm personally passionate about the future of education for our children. </p>
+                                <p>For my part, I created the landing page we used in our social media campaign that connected those who were interested with our newsletter (via MailChimp). We ended up winning the competition.</p>
+                                <hr>
+                                <ul class="site-components text-center">
+                                    <li>*HTML</li>
+                                    <li>*CSS</li>
+                                    <li>*Branding</li>
+                                </ul>
+                                <hr>
+                                <p class="text-center"><a class="btn btn-light btn-lg" href="http://pupalstage.com/" target="blank">Live Site</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-item blue4-background">
+                <div class="container">
+                    <div class="project-bio">
+                        <a class="main-link" href="http://pupalstage.com/">
+                            <h3>Etsy Lighting</h3>
+                        </a>
+                        <div class="row">
+                            <div class="project-example col-sm-7">
+                                <div class="desktop">
+                                    <div class="desktop-img">
+                                        <img src="images/etsylights.png">
+                                    </div>
+                                </div>
+                                <!-- mobile div goes here -->
+                            </div>
+                            <div class="project-desc col-sm-5">
+                                <p>One of the technologies we spent time on while at TIY was Backbonejs. I created this simple site using the backbone framework to pull in items using Etsy's API.</p>
+                                <hr>
+                                <ul class="site-components text-center">
+                                    <li>*HTML</li>
+                                    <li>*CSS (Sass)</li>
+                                    <li>Twitter Bootstrap</li>
+                                    <li>*Backbone</li>
+                                    <li>*API Integration</li>
+                                    <li>*Branding</li>
+                                    <li>
+                                        <a href="https://github.com/ColorTurtle/EtsyLighting">
+                                        *GitHub Code
+                                        </a>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <p class="text-center"><a class="btn btn-light btn-lg" href="http://colorturtle.github.io/EtsyLighting/#/items/128217412" target="blank">GitHub Site</a></p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
 
