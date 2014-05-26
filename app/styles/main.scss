@@ -1,0 +1,291 @@
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+
+@import 'sass-bootstrap/lib/bootstrap';
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    background: rgb(231, 231, 231);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Bitter', serif;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+a {
+    color: #FA1CA1;
+    &:hover {
+        color: #FA1CA1;
+    }
+}
+
+.main-link {
+    color: white;
+    text-decoration: underline;
+
+    &:hover {
+        color: #FA1CA1;
+    }
+}
+
+// typography
+
+.text-jumbo {
+    line-height: 60px;
+    font-size: 58px;
+}
+
+.text-jumbo-light {
+    line-height: 60px;
+    font-size: 58px;
+    font-weight: 400;
+}
+
+.text-bigger {
+    line-height: 26px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+// Buttons
+.btn {
+    color: rgb(83, 83, 83);
+    border: 1px solid rgb(83, 83, 83);
+    &:hover {
+        color: white;
+        background: #FA1CA1;
+    }
+}
+
+.btn-light {
+    color: white;
+    border: 1px solid white;
+}
+
+.blue-background {
+    background-color: #258496;
+    color: white;
+}
+
+.blue2-background {
+    background-color: #349AAD;
+    color: white;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+    border-bottom: 1px solid #e5e5e5;
+    background: url(../images/reflection.jpg) no-repeat center top fixed;
+    background-size: 100%;
+    height: 650px;
+    color: white;
+
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+.header-copy {
+    margin-top: 200px;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-bottom: 1px solid white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background: url(../images/reflection.jpg) no-repeat center top fixed;
+    background-size: 100%;
+    z-index: 10;
+    color: white;
+}
+
+.nav {
+
+    li {
+        margin-right: 10px;
+    }
+
+    li a {
+        color: white;
+        border: 1px solid white;
+
+        &:hover {
+            background-color: #FA1CA1;
+        }
+    }
+}
+
+/* Custom page footer */
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+.container .jumbotron {
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+
+.work {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.portfolio-item {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+.desktop {
+    background-color: rgb(66, 66, 66);
+    width: 520px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.desktop-img {
+    width: 500px;
+    height: 300px;
+    overflow-x: hidden;
+
+    img {
+        width: 500px;
+    }
+}
+
+.mobile {
+    background-color: rgb(66, 66, 66);
+    width: 150px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 15px;
+    padding-bottom: 0px;
+    position: absolute;
+    z-index: 5;
+    top: 50px;
+    left: 400px;
+
+    .mobile-btn {
+        width: 15px;
+        height: 15px;
+        border: 1px solid gray;
+        border-radius: 50%;
+        margin: 10px auto;
+    }
+}
+
+.mobile-img {
+    width: 120px;
+    height: 250px;
+    overflow-x: hidden;
+
+    img {
+        width: 120px;
+    }
+}
+
+
+/* Main marketing message and sign up button */
+.jumbotron {
+    background: #F0F0F0;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+
+    li {
+        line-height: 1em;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .header {
+        background-size: 150%;
+        height: 500px;
+    }
+
+    .text-jumbo-light {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        height: 400px;
+        background: url(../images/reflection.jpg) no-repeat top center fixed;
+        background-size: 200%;
+
+    }
+
+    .text-jumbo-light {
+        font-size: 35px;
+    }
+
+}
