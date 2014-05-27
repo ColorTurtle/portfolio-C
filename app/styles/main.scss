@@ -68,7 +68,7 @@ hr {
 }
 
 .text-bigger {
-    line-height: 10px;
+    line-height: 24px;
     font-size: 26px;
     font-weight: 400;
 }
@@ -84,9 +84,14 @@ hr {
     font-family: 'Bitter', serif;
 }
 
-.phone {
+.contact-info {
     line-height: 10px;
 }
+
+.phone {
+    font-size: 20px;
+}
+
 // Background Colors
 .blue-background {
     background-color: #258496;
