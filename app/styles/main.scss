@@ -440,7 +440,9 @@ hr {
 
 @media screen and (max-width: 390px) {
     .navigation {
-        background-color: #258496;
+        background: #258496;
+        position: absolute;
+        top: 0;
     }
 
     .nav li {
