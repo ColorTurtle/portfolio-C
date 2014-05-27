@@ -80,6 +80,9 @@ hr {
     padding: 0.2em 0;
 }
 
+.font2 {
+    font-family: 'Bitter', serif;
+}
 // Background Colors
 .blue-background {
     background-color: #258496;
@@ -422,6 +425,55 @@ hr {
 
         img {
             width: 280px;
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .navigation {
+        background-color: #258496;
+    }
+
+    .nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-pills li {
+        margin-left: 2px;
+        a {
+            border-radius: 0px;
+        }
+    }
+
+    .phone {
+        text-align: center;
+    }
+
+    .header {
+        background-size: 330%;
+
+        .header-copy {
+            margin-top: 300px;
+        }
+    }
+
+    .container {
+
+        .jumbotron {
+            padding: 10px 20px;
+        }
+    }
+
+    .about-section {
+        .about-link {
+            top: -280px;
+        }
+    }
+
+    .work {
+        .work-link {
+            top: -280px;
         }
     }
 }
