@@ -45,6 +45,15 @@ hr {
     }
 }
 
+.main-link-dark {
+    color: #494949;
+    text-decoration: underline;
+
+    &:hover {
+        color: #FA1CA1;
+    }
+}
+
 // typography
 
 .text-jumbo {
@@ -71,21 +80,7 @@ hr {
     padding: 0.2em 0;
 }
 
-// Buttons
-.btn {
-    color: rgb(83, 83, 83);
-    border: 1px solid rgb(83, 83, 83);
-    &:hover {
-        color: white;
-        background: #FA1CA1;
-    }
-}
-
-.btn-light {
-    color: white;
-    border: 1px solid white;
-}
-
+// Background Colors
 .blue-background {
     background-color: #258496;
     color: white;
@@ -102,9 +97,25 @@ hr {
 }
 
 .blue4-background {
-    background-color: #9ED1DA;
+    background-color: #91C0C9;
     color: white;
 }
+
+// Buttons
+.btn {
+    color: rgb(83, 83, 83);
+    border: 1px solid rgb(83, 83, 83);
+    &:hover {
+        color: white;
+        background: #FA1CA1;
+    }
+}
+
+.btn-light {
+    color: white;
+    border: 1px solid white;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -188,7 +199,7 @@ hr {
 
 .work {
     padding-top: 19px;
-    color: #777;
+    color: #494949;
     border-top: 1px solid #e5e5e5;
 }
 
@@ -209,6 +220,10 @@ hr {
     }
 }
 
+.project-example {
+    margin-bottom: 30px;
+}
+
 .desktop {
     background-color: rgb(66, 66, 66);
     width: 520px;
@@ -216,6 +231,7 @@ hr {
     border-radius: 5px;
     padding: 10px;
     padding-bottom: 20px;
+    margin: 15px auto;
 }
 
 .desktop-img {
@@ -237,7 +253,7 @@ hr {
     padding-bottom: 0px;
     position: absolute;
     z-index: 5;
-    top: 50px;
+    top: 60px;
     left: 400px;
 
     .mobile-btn {
@@ -312,16 +328,87 @@ hr {
     }
 }
 
+@media screen and (max-width: 992px) {
+    .mobile {
+        left: 500px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .header {
         height: 400px;
         background: url(../images/reflection.jpg) no-repeat top center fixed;
         background-size: 200%;
-
     }
 
     .text-jumbo-light {
         font-size: 35px;
     }
 
+    .project-example {
+        margin-bottom: 40px;
+    }
+
+    .desktop {
+    background-color: rgb(66, 66, 66);
+    width: 400px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    padding-bottom: 20px;
+    margin: 15px auto;
+    }
+
+    .desktop-img {
+        width: 380px;
+        height: 200px;
+        overflow-x: hidden;
+
+        img {
+            width: 380px;
+        }
+    }
+
+    .mobile {
+        background-color: rgb(66, 66, 66);
+        width: 110px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 10px;
+        padding-bottom: 0px;
+        top: 20px;
+        left: 65%;
+
+        .mobile-btn {
+            width: 15px;
+            height: 15px;
+            border: 1px solid gray;
+            border-radius: 50%;
+            margin: 10px auto;
+        }
+    }
+
+    .mobile-img {
+        width: 90px;
+        height: 180px;
+        overflow-x: hidden;
+
+        img {
+            width: 90px;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .desktop {
+        width: 300px;
+    }
+
+    .desktop-img {
+        width: 280px;
+
+        img {
+            width: 280px;
+        }
+    }
 }
