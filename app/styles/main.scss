@@ -6,6 +6,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     background: rgb(231, 231, 231);
+    line-height: 1.6;
 }
 
 h1,
@@ -18,7 +19,7 @@ h6 {
 }
 
 h2 {
-    font-size: 55px;
+    font-size: 38px;
 }
 
 h3 {
@@ -68,7 +69,7 @@ hr {
 }
 
 .text-bigger {
-    line-height: 24px;
+    line-height: 1.6;
     font-size: 26px;
     font-weight: 400;
 }
@@ -84,10 +85,10 @@ hr {
     font-family: 'Bitter', serif;
 }
 
-.contact-info {
-    line-height: 10px;
-}
-
+// .contact-info {
+//     line-height: 10px;
+// }
+.e-mail,
 .phone {
     font-size: 20px;
 }
@@ -190,6 +191,7 @@ hr {
 
 .about-section {
     position: relative;
+    padding-top: 20px;
 
     .about-link {
         position: absolute;
@@ -205,7 +207,10 @@ hr {
     }
 }
 
-/* Custom page footer */
+.cleaner-list {
+    padding-left: 0;
+}
+
 .container-narrow > hr {
     margin: 20px 0;
     border-top: 1px solid rgba(238, 238, 238, 0.37);
@@ -305,9 +310,14 @@ hr {
 .jumbotron {
     background: #F0F0F0;
     border-bottom: 1px solid #e5e5e5;
+    font-size: 18px;
     .btn {
         font-size: 21px;
         padding: 14px 24px;
+    }
+
+    p {
+        line-height: 1.6;
     }
 
     li {
@@ -361,9 +371,32 @@ hr {
 
 @media screen and (max-width: 768px) {
     .header {
-        height: 400px;
         background: url(../images/reflection.jpg) no-repeat top center fixed;
         background-size: 200%;
+        height: 500px;
+
+        .header-copy {
+            margin-top: 350px;
+        }
+    }
+
+    .navigation {
+        background: url(../images/reflection.jpg) no-repeat top center fixed;
+        background-size: 200%;
+        // position: absolute;
+        // top: 0;
+    }
+
+    .about-section {
+        .about-link {
+            top: -190px;
+        }
+    }
+
+    .work {
+        .work-link {
+            top: -200px;
+        }
     }
 
     .text-jumbo-light {
@@ -422,6 +455,59 @@ hr {
             width: 90px;
         }
     }
+    
+    .nav-info {
+        text-align: center;
+        display: block;
+    }
+
+    .client-job-title {
+        font-size: 23px;
+    }
+
+    .phone {
+        font-size: 36px;
+    }
+
+    .e-mail {
+        font-size: 21px;
+    }
+
+    .nav-pills {
+        margin-top: 10px;
+    }
+
+    .pull-right {
+        float: none;
+    }
+
+}
+
+@media screen and (max-width: 670px) {
+    .nav li {
+        width: 100%;
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+    .nav-pills li {
+        margin-left: 2px;
+        a {
+            // border-radius: 0px;
+        }
+    }
+
+    .about-section {
+        .about-link {
+            top: -250px;
+        }
+    }
+
+    .work {
+        .work-link {
+            top: -260px;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -438,6 +524,14 @@ hr {
     }
 }
 
+@media screen and (max-width: 440px) {
+    .header {
+        height: 400px;
+        .header-copy {
+            margin-top: 300px;
+        }
+    }
+}
 @media screen and (max-width: 390px) {
     .navigation {
         background: #258496;
@@ -445,46 +539,31 @@ hr {
         top: 0px;
     }
 
-    .nav li {
-        width: 100%;
-        text-align: center;
-    }
-
-    .nav-pills li {
-        margin-left: 2px;
-        a {
-            border-radius: 0px;
-        }
-    }
-
-    .phone {
-        text-align: center;
-    }
-
     .header {
         background-size: 330%;
+        height: 430px;
 
         .header-copy {
-            margin-top: 300px;
+            margin-top: 330px;
         }
     }
 
     .container {
 
         .jumbotron {
-            padding: 10px 20px;
+            padding: 10px 33px;
         }
     }
 
     .about-section {
         .about-link {
-            top: -280px;
+            top: -30px;
         }
     }
 
     .work {
         .work-link {
-            top: -280px;
+            top: -30px;
         }
     }
 }
